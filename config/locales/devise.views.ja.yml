@@ -20,7 +20,7 @@ ja:
               invalid: "は有効でありません。"
               confirmation: "が内容とあっていません。"
             password_confirmation:
-              confirmation: "が内容とあっていません。"
+              confirmation: "が一致しません。"
     attributes:
       user:
         current_password: "現在のパスワード"
