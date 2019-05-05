@@ -1,0 +1,10 @@
+h1 Users#show
+p Find me in app/views/users/show.html.slim
+
+- @users.each do |user|
+  tr
+    td = user.name
+    td = user.email
+    td = link_to 'Show', user
+    td = link_to 'Edit', edit_user_path(user)
+    td = link_to 'Destroy', user, method: :delete, data: { confirm: ユーザーを削除しますか？(削除したユーザーは復元できません) }

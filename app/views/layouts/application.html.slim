@@ -10,14 +10,20 @@ html
     header.navbar-fixed
       nav
         .nav-wrapper.container
-
+          - if user_signed_in?
+            a#sidenav href="#" data-target="slide-out" class="sidenav-trigger"
+              i.material-icons account_circle
+              i.material-icons key_board_arrow_down
+          - else
+            i.material-icons account_circle
           ul#nav-mobile.right
             li = link_to "ホーム", root_path
             li = link_to "ヘルプ", help_path
-            li = link_to "ログイン", '#'
+            //- if !logged_in?
+              //li = link_to "ログイン", new_user_session_path
 
     aside
-      //= render 'layouts/sidebar'
+      = render 'layouts/sidebar' if user_signed_in?
 
     main
       == yield

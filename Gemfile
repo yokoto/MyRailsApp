@@ -12,6 +12,9 @@ gem 'html2slim'
 gem 'slim-rails'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'

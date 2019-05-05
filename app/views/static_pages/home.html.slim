@@ -3,5 +3,8 @@ div class="center jumbotron"
 
   h2 ポートフォリオ用アプリケーション
 
-  = link_to '#', class: "btn btn-lg btn-primary" do
-    | 新規登録
+  = link_to new_user_registration_path, class: "btn btn-lg btn-primary" do
+    | アカウント作成
+
+  = link_to user_session_path, class: "btn btn-lg" do
+    | ログイン

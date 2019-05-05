@@ -1,0 +1,5 @@
+ul#slide-out.sidenav
+  li = link_to "プロフィール", current_user
+  li = link_to "設定", edit_user_path(current_user)
+  li.divider
+  li = link_to "ログアウト", destroy_user_session_path
