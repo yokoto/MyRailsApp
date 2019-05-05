@@ -19,10 +19,12 @@ ja:
               too_long: "は%{count}文字以下に設定して下さい。"
               invalid: "は有効でありません。"
               confirmation: "が内容とあっていません。"
-            #password_confirmation:
+            password_confirmation:
+              confirmation: "が内容とあっていません。"
     attributes:
       user:
         current_password: "現在のパスワード"
+        name: "名前"
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "確認用パスワード"
