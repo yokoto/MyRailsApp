@@ -21,6 +21,8 @@ ja:
               confirmation: "が内容とあっていません。"
             password_confirmation:
               confirmation: "が一致しません。"
+            current_password: "現在のパスワード"
+              blank: "現在のパスワードを入力してください。"
     attributes:
       user:
         current_password: "現在のパスワード"
