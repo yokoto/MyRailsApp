@@ -19,6 +19,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails', "~> 4.10.0"
   gem 'spring-commands-rspec'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
