@@ -50,4 +50,8 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: my_app_production
+  encoding: unicode
+  database: db/production.postgresql
+  pool: 5
+  username: test_postgre
+  password:
