@@ -1,2 +1,12 @@
 - provide :title, @user.name
-h1 = @user.name
+.row
+  aside.col-md-4
+    section.user_info
+      h1 = @user.name
+  .col-md-8
+    -if @user.posts.any?
+      h3
+        | ユーザー投稿
+      ol.posts
+        = render @posts
+      = paginate @posts
