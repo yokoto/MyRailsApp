@@ -1,5 +1,0 @@
-li id="post-#{post.id}"
-  span.user = link_to post.user.name, post.user
-  span.content = post.content
-  span.timestamp
-    | #{time_ago_in_words(post.created_at)}
