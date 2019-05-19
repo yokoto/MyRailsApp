@@ -21,8 +21,10 @@ ja:
               confirmation: "が内容とあっていません。"
             password_confirmation:
               confirmation: "が一致しません。"
-              #current_password: "現在のパスワード"
-              #blank: "現在のパスワードを入力してください。"
+        post:
+          attributes:
+            content:
+              blank: "が入力されていません。"
     attributes:
       user:
         current_password: "現在のパスワード"
@@ -31,8 +33,11 @@ ja:
         password: "パスワード"
         password_confirmation: "確認用パスワード"
         remember_me: "ログインを記憶"
+      post:
+        content: "投稿内容"
     models:
       user: "ユーザ"
+      post: "投稿"
   devise:
     confirmations:
       new:
