@@ -7,7 +7,7 @@
         span 
           | #{current_user.posts.count}投稿
       section.post_form
-        = form_for(@posts) do |f|
+        = form_for(@post) do |f|
           = render 'shared/error_messages', object: f.object
           .field
               = f.text_area :content, placeholder: "いまなにしてる？"
