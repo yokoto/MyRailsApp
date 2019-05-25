@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create!(name: "横田 俊博",
+             email: "yo44ko55@gmail.com",
+             password: "foobar",
+             password_confirmation: "foobar")
+
+50.times do |n|
+  name = Gimei.name
+  email = "example-#{n+1}@gmail.com"
+  password = "password"
+  user = User.create!(name: name,
+               email: email,
+               password: password,
+               password_confirmation: password
+              )
+
+  content = Yoshida::Text.sentences(rand(1..5)).join
+  user.posts.create!(content: content)
+end

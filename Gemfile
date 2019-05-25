@@ -18,6 +18,8 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
 gem 'dotenv-rails'
+gem 'yoshida'
+gem 'gimei'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
