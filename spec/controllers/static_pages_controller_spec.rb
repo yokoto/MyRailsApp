@@ -21,7 +21,7 @@ RSpec.describe StaticPagesController, type: :controller do
       end
     end
 
-    context "as an guest" do
+    context "as a guest" do
       it "returns a 302 response" do
         get :home
         expect(response).to have_http_status "302"

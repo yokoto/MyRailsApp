@@ -7,7 +7,8 @@ class PostsController < ApplicationController
       flash[:success] = "投稿されました。"
       redirect_to root_url
     else
-      render root_path
+      @feed_items = current_user.posts.where("user_id = ?", current_user.id).page(params[:page])
+      render 'static_pages/home'
     end
   end
 
