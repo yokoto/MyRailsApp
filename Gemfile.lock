@@ -95,6 +95,8 @@ GEM
       factory_bot (~> 4.10.0)
       railties (>= 3.0.0)
     ffi (1.10.0)
+    gimei (0.3.0)
+      romaji
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hpricot (0.8.6)
@@ -177,6 +179,8 @@ GEM
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
+    romaji (0.2.4)
+      rake (>= 0.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.3)
@@ -263,6 +267,7 @@ GEM
     websocket-extensions (0.1.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yoshida (0.1.1)
 
 PLATFORMS
   ruby
@@ -279,6 +284,7 @@ DEPENDENCIES
   devise-i18n-views
   dotenv-rails
   factory_bot_rails (~> 4.10.0)
+  gimei
   html2slim
   jbuilder (~> 2.5)
   jquery-rails
@@ -299,6 +305,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  yoshida
 
 BUNDLED WITH
    2.0.1
