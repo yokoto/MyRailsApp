@@ -15,7 +15,7 @@
     .col-md-8
       h3 タイムライン
       - if @posts.any?
-        ol.posts
+        ul.posts
           = render @posts
         = paginate @posts, theme: 'twitter-bootstrap-4'
 - else
