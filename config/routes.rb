@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'rooms/show'
+
+  get 'rooms/create'
+
   devise_for :user
   devise_scope :user do
     get 'users/sign_out' => 'devise/session#destroy'
