@@ -20,6 +20,7 @@ gem 'bootstrap4-kaminari-views'
 gem 'dotenv-rails'
 gem 'yoshida'
 gem 'gimei'
+gem 'webpacker'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
