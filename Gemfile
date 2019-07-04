@@ -21,6 +21,8 @@ gem 'dotenv-rails'
 gem 'yoshida'
 gem 'gimei'
 gem 'webpacker'
+gem 'rubocop', require: false
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
