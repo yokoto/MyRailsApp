@@ -16,3 +16,9 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
+
+$(document).on("turbolinks:load", function() {
+    $("ul.nav li.nav-item").on("click", function(){
+      $("a ul.drop-menu").toggleClass("open")
+    })
+});

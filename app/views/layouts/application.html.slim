@@ -13,16 +13,14 @@ html
           li.nav-item
             = link_to 'ユーザー一覧', users_path
           li.nav-item.dropdown
-            a.dropdown-toggle data-toggle="dropdown" href="#"
-              | アカウント
-              b.caret
-            ul.dropdown-menu
+            i アカウント
+            ul.drop-menu
               li
                 = link_to 'プロフィール', user_path(current_user)
               li
                 = link_to '設定', edit_user_registration_path(current_user)
               li.divider
-              li 
+              li
                 = link_to 'ログアウト', destroy_user_session_path, method: :delete
     .container
       - flash.each do |message_type, message|
