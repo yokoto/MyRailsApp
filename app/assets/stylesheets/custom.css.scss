@@ -28,16 +28,36 @@
 }
 
 /*navbar*/
-.nav-item {
-  padding-left: 15px;
+ul.nav{
+  .nav-item {
+    padding-left: 15px;
+    // 設定する順序もこの通りに
+    .drop-menu {
+      list-style: none;
+      position: absolute;
+      width: 160px;
+      right: 0;
+      z-index: 1000;
+      /* ドロップダウン */
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s;
+      &:before {
+        content: "";
+      }
+      &.open{
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 }
+
 
 /*timeline*/
 .timeline {
   border: solid 1px;
   border-radius: 10px;
-  drop-shadow: 8px 8px 5px black;
-
 }
 
 .col-md-8{
