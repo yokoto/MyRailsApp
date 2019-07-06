@@ -8,5 +8,5 @@ li.timeline id="post-#{post.id}"
       span.timestamp
       | #{time_ago_in_words(post.created_at, include_seconds: true)}前
       - if current_user == post.user
-        | 
+        |
         = link_to "削除", post, method: :delete, data: { confirm: "本当に削除してもよろしいですか？" }

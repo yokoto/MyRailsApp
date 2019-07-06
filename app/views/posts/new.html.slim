@@ -1,0 +1,14 @@
+.row
+  aside.col-md-4
+    section.user_info
+      h3 = current_user.name
+      span = link_to "このユーザーのプロフィールを見る", current_user
+      span
+        | #{current_user.posts.count}投稿
+    section.post_form
+      = form_for(@post) do |f|
+        = render 'shared/error_messages', object: f.object
+        .field
+            = f.text_area :content, placeholder: "いまなにしてる？"
+        = f.submit "投稿", class: "btn btn-primary"
+  .col-md-8
