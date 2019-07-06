@@ -1,0 +1,7 @@
+- provide :title, 'タイムライン'
+h3 タイムライン
+
+- if @posts.any?
+  ul
+    = render @posts
+  = paginate @posts, theme: 'twitter-bootstrap-4'

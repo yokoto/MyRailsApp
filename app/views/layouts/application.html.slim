@@ -13,9 +13,13 @@ html
         - if user_signed_in?
           li.nav-item
             = link_to 'ユーザー一覧', users_path
+          li.nav-item
+            = link_to 'タイムライン', posts_path
           li.nav-item.dropdown
-            = link_to 'アカウント', '#'
+            span アカウント
             ul.drop-menu
+              li
+                = link_to '投稿する', new_post_path
               li
                 = link_to 'プロフィール', user_path(current_user)
               li

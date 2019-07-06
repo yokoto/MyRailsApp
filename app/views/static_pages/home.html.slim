@@ -1,26 +1,13 @@
 - if user_signed_in?
   .row
-    aside.col-md-4
+    aside.col-md-3
       section.user_info
-        h1 = current_user.name
+        h3 = current_user.name
         span = link_to "このユーザーのプロフィールを見る", current_user
-        span 
-          | #{current_user.posts.count}投稿
-      section.post_form
-        = form_for(@post) do |f|
-          = render 'shared/error_messages', object: f.object
-          .field
-              = f.text_area :content, placeholder: "いまなにしてる？"
-          = f.submit "投稿", class: "btn btn-primary"
-    .col-md-8
-      h3 タイムライン
-      - if @posts.any?
-        ul.posts
-          = render @posts
-        = paginate @posts, theme: 'twitter-bootstrap-4'
+    .col-md-9
 - else
   div.center.jumbotron
-    h1 
+    h1
       | My App
     h2
       | オリジナルポートフォリオ用アプリケーション

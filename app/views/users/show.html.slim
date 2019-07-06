@@ -2,11 +2,11 @@
 .row
   aside.col-md-4
     section.user_info
-      h1 = @user.name
+      h3 = @user.name
   .col-md-8
     -if @user.posts.any?
-      h3
+      h4
         | ユーザー投稿
       ul.posts
         = render @posts
-      = paginate @posts
+      = paginate @posts, theme: 'twitter-bootstrap-4'
