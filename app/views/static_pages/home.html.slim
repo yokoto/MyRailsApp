@@ -5,6 +5,7 @@
         h3 = current_user.name
         span = link_to "このユーザーのプロフィールを見る", current_user
     .col-md-9
+      = javascript_pack_tag 'hello_react'
 - else
   div.center.jumbotron
     h1
