@@ -24,7 +24,5 @@
 
 ## 開発者
 横田 俊博  
-Twitter: https://twitter.com/yokoto13  
 Qiita: https://qiita.com/yokoto  
 Github: https://github.com/yokoto  
-Wantedly: https://www.wantedly.com/users/5130258
